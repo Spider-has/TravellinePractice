@@ -17,17 +17,19 @@ class Order
     public OrderData orderData = new();
     public bool IsDataConfirmed { get; private set; }
     private DateTime _orderConfirmationTime;
+    private DateTime _orderDeliveryDate;
     private static int _deliveryDayCount = 3;
     public void SetOrderConfirmed()
     {
         IsDataConfirmed = true;
         _orderConfirmationTime = DateTime.Now;
+        _orderDeliveryDate = _orderConfirmationTime.AddDays( _deliveryDayCount );
     }
     public void PrintOrderConfirmationMessage()
     {
         if ( IsDataConfirmed )
         {
-            Console.WriteLine( $"{orderData.ClientName}! Ваш заказ {orderData.ProductName} в количестве {orderData.ProductCount} оформлен! Ожидайте доставку по адресу {orderData.DeliveryAddress} к {_orderConfirmationTime.AddDays( _deliveryDayCount )}" );
+            Console.WriteLine( $"{orderData.ClientName}! Ваш заказ {orderData.ProductName} в количестве {orderData.ProductCount} оформлен! Ожидайте доставку по адресу {orderData.DeliveryAddress} к {_orderDeliveryDate}" );
         }
         else
         {

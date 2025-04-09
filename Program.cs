@@ -29,19 +29,21 @@ public class Program
     }
     static string ReadNonEmptyString()
     {
-        string input = string.Empty;
-        while ( string.IsNullOrEmpty( input ) )
+        string input = Console.ReadLine();
+        while ( string.IsNullOrWhiteSpace( input ) )
         {
+            Console.WriteLine( "Пожалуйста, введите не пустую строку и не пробелы" );
             input = Console.ReadLine();
         }
         return input;
     }
     static int ReadPositiveNumber()
     {
+        string numStr = Console.ReadLine();
         int num = 0;
-        string numStr = string.Empty;
         while ( !int.TryParse( numStr, out num ) || num <= 0 )
         {
+            Console.WriteLine( "Пожалуйста, введите число большее 0" );
             numStr = Console.ReadLine();
         }
         return num;
@@ -49,9 +51,10 @@ public class Program
 
     static bool ReadQuestionAnswer()
     {
-        string answer = "";
+        string answer = Console.ReadLine();
         while ( answer.ToLower() != "y" && answer.ToLower() != "n" )
         {
+            Console.WriteLine( "Пожалуйста, введите либо 'y', либо 'n'" );
             answer = ReadNonEmptyString();
         }
         return answer.ToLower() == "y";

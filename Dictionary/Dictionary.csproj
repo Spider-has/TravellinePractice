@@ -8,11 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EditorConfigFiles Remove="C:\Users\Roman\Desktop\Travelline\OrderManager\OrderManager\.editorconfig" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="C:\Users\Roman\Desktop\Travelline\OrderManager\OrderManager\.editorconfig" />
+    <None Update="dictionary.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

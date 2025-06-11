@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #201C29;
+    padding: 25px 30px;
+
+}
+
+.header-panel-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+header a {
+    font-size: 32px;
+    color: #F5F5DC;
+    text-decoration: none;
+}
+
+header button {
+    color: #F5F5DC;
+}
+
+.user-info-area {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    color: #F5F5DC;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #201C29;
+}
+
+footer div {
+    font-size: 16px;
+    color: #F5F5DC;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-size: 24px;
+}
+
+.button_text-size_large {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.input-suggestion {
+    font-size: 12px;
+}
+
+.input-suggestion_type_error {
+    color: #FE0000;
+}
+
+.hidden-element {
+    display: none !important;
+}

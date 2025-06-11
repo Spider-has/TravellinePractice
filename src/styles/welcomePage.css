@@ -1,0 +1,25 @@
+.welcome-page-wrapper {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.welcome-page-wrapper h2 {
+    font-size: 30px;
+    color: #201C29;
+    text-align: center;
+}
+
+.text-decoration-red {
+    color: #8B0000;
+}
+
+.text-decoration-orange {
+    color: #FF8C00;
+}
+
+.welcome-page-wrapper button {
+    color: #3D85C6;
+}

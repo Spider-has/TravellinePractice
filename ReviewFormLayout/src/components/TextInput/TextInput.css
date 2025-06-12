@@ -1,0 +1,29 @@
+.text-input-area {
+    position: relative;
+}
+
+.text-input-area input {
+    padding: 6px 15px;
+    color: #404040;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #DCDCDC;
+}
+
+.text-input-area input::placeholder {
+    color: #909090;
+}
+
+.text-input-area span {
+    position: absolute;
+    z-index: 1;
+    left: 7px;
+    top: -5px;
+    color: #909090;
+    font-size: 10px;
+    font-family: "Inter", sans-serif;
+    background-color: #FFF;
+    padding: 0 3px
+}

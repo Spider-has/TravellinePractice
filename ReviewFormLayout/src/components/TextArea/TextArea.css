@@ -1,0 +1,13 @@
+.form-text-area {
+    padding: 11px 15px;
+    border-radius: 5px;
+    border: 1px solid #DCDCDC;
+    resize: none;
+    color: #404040;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.form-text-area input::placeholder {
+    color: #909090;
+}

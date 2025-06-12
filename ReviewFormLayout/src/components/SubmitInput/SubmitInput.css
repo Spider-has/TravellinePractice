@@ -1,0 +1,15 @@
+.form-submit {
+    padding: 8px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #FFF;
+    background-color: #1E65B7;
+
+    border: 1px solid #DCDCDC;
+    border-radius: 5px;
+}
+
+.form-submit:disabled {
+    background-color: #C0C0C0;
+
+}

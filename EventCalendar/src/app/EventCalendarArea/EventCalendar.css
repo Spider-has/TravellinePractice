@@ -1,0 +1,6 @@
+.event-calendar-area {
+    padding: 15px 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}

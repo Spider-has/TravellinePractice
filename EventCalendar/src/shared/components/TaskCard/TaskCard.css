@@ -1,0 +1,29 @@
+.task-card {
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #343434;
+    background-color: #FEE3C4;
+    border-radius: 15px;
+    border: 1px solid #bababa;
+    box-shadow: 0 0 10px -1px #363636;
+    user-select: none;
+}
+
+.task-card_dnd-background {
+    display: none;
+    color: #636363;
+    background-color: #FFF;
+}
+
+.task-card_drop-zone {
+    border: 3px dashed rgb(0, 137, 235);
+    background-color: #eaf4ff;
+    display: none;
+}
+
+.task-card-interaction-area {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}

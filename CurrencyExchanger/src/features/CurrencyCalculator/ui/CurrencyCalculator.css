@@ -1,0 +1,23 @@
+.currency-exchanger-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #9a9a9a;
+    border-radius: 25px;
+}
+
+header {
+    max-width: 1600px;
+    width: 90%;
+    border: 1px solid #9a9a9a;
+    border-radius: 0 0 15px 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #FFF;
+    gap: 20px;
+}
